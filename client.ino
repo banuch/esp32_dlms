@@ -1062,7 +1062,7 @@ void setup() {
   BYTE_BUFFER_INIT(&frameData);
   //Set frame capacity.
   bb_capacity(&frameData, 128);
-  Client.init(true, 16, 1, DLMS_AUTHENTICATION_NONE, NULL, DLMS_INTERFACE_TYPE_HDLC);
+  Client.init(true, 1, 1, DLMS_AUTHENTICATION_LOW, "1111111111111111", DLMS_INTERFACE_TYPE_HDLC);
   //Un-comment this if you want to set system title, block cipher key or authentication key.
   /*
     Client.SetSecurity(DLMS_SECURITY_AUTHENTICATION_ENCRYPTION);
